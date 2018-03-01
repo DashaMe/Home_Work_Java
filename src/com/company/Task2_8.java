@@ -15,14 +15,19 @@ public class Task2_8 {
         System.out.println("");
 
         int count = 0;
-        int[][] matrix = new int[3][3];
+        int[][] matrix = new int[4][4];
 
-        for (int i = 0; i < 3; i++) {
-            for (int s = 0; s < 3; s++) {
+        for (int i = 0; i < 4; i++) {
+            for (int s = 0; s < 4; s++) {
                 matrix[i][s] = arr[count++];
+                if (count == arr.length) {
+                    break;
+                }
+            }
+            if (count == arr.length) {
+                break;
             }
         }
-
         System.out.println(Arrays.deepToString(matrix));
     }
 }
