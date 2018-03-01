@@ -7,7 +7,7 @@ public class Task2_9_1 {
     //        9.Ввести с консоли n-размерность матрицы a [n] [n]. Задать значения элементов матрицы в интервале значений от -n до n с помощью датчика случайных чи-сел.
 //            9.1. Упорядочить строки (столбцы) матрицы в порядке возрастания значений.
     public static void main(String[] args) {
-        int[][] matrix = createMultidimentionalArray();
+        int[][] matrix = getMultidimensionalIntArray();
         System.out.println(Arrays.deepToString(matrix));
 
         //сортировка в столбцах
@@ -21,7 +21,7 @@ public class Task2_9_1 {
         System.out.println(Arrays.deepToString(matrix));
     }
 
-    private static int[][] createMultidimentionalArray() {
+    public static int[][] getMultidimensionalIntArray() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, input the size of the array");
         int n = scan.nextInt();
