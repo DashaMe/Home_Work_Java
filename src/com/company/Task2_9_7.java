@@ -1,5 +1,5 @@
 package com.company;
 
-public class Task9_2_7 {
+public class Task2_9_7 {
     //            9.7. Уплотнить матрицу, удаляя из нее строки и столбцы, заполненные нулями.
 }
